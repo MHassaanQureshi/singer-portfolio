@@ -22,7 +22,7 @@
                   <a href="#shows" class="nav-link">Shows</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link" onclick="scrollToSection()">Book Tickets</a>
+                  <a href="#tickets" class="nav-link" onclick="scrollToSection()">Book Tickets</a>
               </li>
               
           </ul>
@@ -55,7 +55,7 @@
         
     </div>
 
-    <div class="thirdpart" id="shows">
+    <div class="thirdpart" >
       <div id="first">
         <h3 id="first1">86</h3>
         <h3 id="first2">Shows Given</h3>
@@ -154,7 +154,7 @@
       </div>
     
   </div>
-    <div class="sixpart">
+    <div class="sixpart" id="shows">
       <div id="six-head">
         <h1 id="heading">UPCOMING EVENTS</h1></div>
       
@@ -179,7 +179,7 @@
     </div>
   
     
-  <div class="form">
+  <div class="form" id="tickets">
     <h2 id="formhead">Book your ticket in advance</h2>
     <div class="formitems">
       <form class="form-in" novalidate>
@@ -248,11 +248,30 @@
     }
     
    
-    function scrollToSection() {
-        document.querySelector("about-singer").scrollIntoView({
-            behavior: "smooth"
-        });
-    }
+    
+  
+    document.querySelector("#aboutLink").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    document.querySelector("#about").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+    document.querySelector("#showaLink").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    document.querySelector("#shows").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+    document.querySelector("#ticketsLink").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    document.querySelector("#tickets").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
 
     </script>
 </body>

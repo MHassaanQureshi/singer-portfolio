@@ -3,6 +3,14 @@
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+html {
+  scroll-behavior: smooth; /* This adds smooth scrolling for all anchor links */
+}
+
+section {
+  padding: 50px; /* Add some padding to sections for better visibility */
+}
+
 body{
     overflow-x: hidden;
     background-color: black;
